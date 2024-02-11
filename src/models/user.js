@@ -51,7 +51,7 @@ userSchema.methods = {
       throw error;
     }
   },
-
+// user token
   getJWTtoken: function () {
     jsonwebtoken.sign({ _id: this._id }, config.JWT_SECRET, {
       expiresIn: config.JWT_EXPITY,
